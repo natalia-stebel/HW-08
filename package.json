@@ -1,0 +1,35 @@
+{
+  "name": "hw-08",
+  "version": "1.0.0",
+  "description": "## Скрытые файлы",
+  "main": ".posthtmlrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /HW-08/",
+    "predeploy": "npm run build -- --public-url=/HW-08/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalia-stebel/HW-08.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natalia-stebel/HW-08/issues"
+  },
+  "homepage": "https://github.com/natalia-stebel/HW-08#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "@vimeo/player": "^2.16.2",
+    "lodash.throttle": "^4.1.1",
+    "simplelightbox": "^2.10.1"
+  }
+}
